@@ -68,13 +68,11 @@ export default {
   mounted() {
     this.initUsers();
     if (this.user.id) {
-      console.log('MOUNTED');
       this.init(this.user.id);
     }
   },
   watch: {
     'user.id': function () {
-      console.log('HERE');
       if (this.user.id) {
         this.init(this.user.id);
       } else {
@@ -182,6 +180,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 0.5em;
+  transition: all 200ms ease-in-out;
 }
 
 .balance {
@@ -190,6 +189,7 @@ export default {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 0.5em;
+  transition: all 200ms ease-in-out;
 }
 
 .header {
@@ -205,6 +205,7 @@ export default {
   text-align: center;
   font-weight: 700;
   color: orangered;
+  transition: all 200ms ease-in-out;
 }
 
 .positive {
@@ -219,6 +220,7 @@ export default {
   font-weight: 700;
   letter-spacing: 0.05em;
   color: mediumpurple;
+  transition: all 200ms ease-in-out;
 }
 
 .transaction-content {

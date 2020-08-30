@@ -24,7 +24,6 @@ const actions = {
     /* eslint-disable */
     /* eslint-enable */
     bindFirestoreRef('transactions', transactions.where('user_id', '==', userId));
-    console.log('transactions in transactionHistory', state.transactions);
   }),
   /* eslint-disable camelcase */
 
